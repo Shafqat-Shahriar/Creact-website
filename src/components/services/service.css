@@ -1,0 +1,165 @@
+/* Service Section Styles */
+
+
+/*   section 1 of services  ===  Services*/
+.Rhero {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for the hero content */
+    text-align: center;
+    padding: 50px;
+}
+
+.Rhero h1 {
+    font-size: 42px;
+}
+
+.Rhero p {
+    font-size: 19px;
+}
+
+/* Son Section Styles */
+.son {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    
+}
+
+/* Individual Service Item Styles */
+.service-item {
+    display: grid;
+    grid-template-columns: 38px 1fr; /* Icon and content */
+    gap: 10px;
+    align-items: center;
+}
+
+.service-icon {
+    width: 38px;
+    height: 38px;
+    background-color: #ff6600; /* Set your icon background color */
+    border-radius: 50%;
+    margin-left: 210px;
+}
+
+.service-item h2 {
+    font-size: 34px;
+    margin: 0;
+}
+
+/* Move <p> tags below <h2> */
+.service-item p {
+    font-size: 18px;
+    margin: 0;
+    grid-column: 2 / span 2; /* Span two columns to position <p> below <h2> */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  section 2 of === services page   (5 images section)  */
+
+/* Brother Section Styles */
+.brother {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    gap: 70px; /* Adjust the gap between images */
+    margin-top: 190px;
+}
+
+/* Image Styles */
+.brother img {
+    width: 244px;
+    height: 244px;
+    margin-bottom: 168px; /* Apply margin to odd-numbered images */
+}
+
+/* Apply margin-top to even-numbered images */
+.brother img:nth-child(even) {
+    margin-top: 168px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 3 css start from here */
+
+/* Portfolio Section Styles === services page */
+.portfolio {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    margin: 220px; /* Margin around the portfolio section */
+    background-color: black; /* Background color for contentB items */
+    color: white; /* Text color for contentB items */
+    padding: 20px; /* Padding for contentB items */
+    gap: 90px
+}
+
+/* Portfolio Column Styles */
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Equal width for columns */
+    gap: 20px; /* Gap between contentB items */
+}
+
+/* ContentB Styles */
+.contentB {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Icon and content */
+    gap: 10px; /* Gap between icon and content */
+    align-items: center;
+    padding: 20px; /* Padding for contentB items */
+    background-color: rgb(41, 205, 49); /* Background color for contentB items */
+    color: white; /* Text color for contentB items */
+}
+
+.contentB img {
+    width: 400px; /* Set image width */
+    height: 400px; /* Set image height */
+     /* Make images circular */
+}
+
+.contentB h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.contentB p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px; /* Font size for lists and paragraphs */
+    margin: 0;
+}
+
+.contentB ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contentB a {
+    text-decoration: none;
+    color: white; /* Link color */
+    font-weight: bold;
+    margin-top: 10px; /* Margin top for the link */
+}
+

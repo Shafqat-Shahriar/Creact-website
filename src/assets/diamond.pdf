@@ -1,0 +1,119 @@
+#include <stdio.h>   // the file head
+int main()           // calls the main function
+{
+    int n;           //Enters the number of upper rows
+    int c;           //columns
+    int r;           //rows
+    printf("Number of upper rows: ");  //prints the statement
+    scanf("%d", &n); // takes the input of the number of upper rows
+    printf("\n");    // makes a new line
+
+
+    /* Things to be noted we are not actually making a diamond, what we are making is an arrow like shape below"
+
+              |   4444*     |    Diamond:      |       *     |
+        Arrow:|   444***    |    {The spaces   |      ***    |
+              |   44*****   |     makes it     |     *****   |
+              |   4*******  |     look like    |    *******  |
+              |   ********* |     a diamond}   |   ********* |
+              |   4*******  |                  |    *******  |
+              |   44*****   |                  |     *****   |
+              |   444***    |                  |      ***    |
+              |   4444*     |                  |       *     |
+
+    */
+//--------------------------------------------------------------------------------------------
+
+
+    /* This line determines the number of rows that shall be looped, it starts with 1 and
+       it will loop until the number of upper rows are defined, incrementing by 1 */
+    for (r=1; r<=n; r++) //this for loop runs 5 times
+
+    {
+        //This nested for loop forms the first triangle, its shape plays a vital role in creation of the diamonds upper triangular portion(the pyramid shape)
+
+        for (c = 1; c<= n-r; c++)  //the for loop condition
+            printf(" ");
+
+         /* The spaces in the code prints like this:
+
+          |      4444    |
+          |      444     |
+          |      44      |
+          |      4       |
+
+        */
+//-----------------------------------------------------------
+
+        // This nested for loop forms the upper pyramid of the diamond
+
+        for (c = 1; c <= 2*r -1; c++) // this condition(c <= 2*r -1;) of the nested for loop prints stars(*) in odd numbers
+            printf("*");              // and it increases the odd number star(*) intervals each line till the loop ends
+
+        printf("\n");  //it forms a new line and the program starts from the next row
+
+    }
+        /* ----------------------------------------------------------------
+                            |                       |
+           The code prints  | but due to the        | Hence what we see is,
+           like this:       | first triangle the    | this in the code:
+                            | shape forms this:     |
+         -------------------|----------------------------------------------
+                            |                       |
+           *                |  4444*                |     *
+           ***              |  444***               |    ***
+           *****            |  44*****              |   *****
+           *******          |  4*******             |  *******
+           *********        |  *********            | *********
+                            |                       |
+        ------------------------------------------------------------------*/
+
+
+//----------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------
+
+
+    /* Over here the number of loops will be one less due to (r<=n-1;), if you just write (n) it wont affect the diamond shape
+     but the code will just run another wasted loop, with nothing to show , which is a bad practice.*/
+    for (r = 1; r<= n - 1; r++)
+    {
+        //This nested loop forms the 2nd triangle, its shape plays a vital role in creation of the diamonds lower triangular portion(the mirror pyramid shape)
+        for (c = 1; c<= r; c++)
+            printf(" ");
+
+        /* The spaces in the code prints like this:
+
+          |      4       |
+          |      44      |
+          |      444     |
+          |      4444    |
+
+        */
+//----------------------------------------------------------
+
+        // This nested for loop forms the lower pyramid of the diamond
+
+        for (c = 1; c<= 2*(n-r)-1; c++) // this condition (c<= 2*(n-r)-1;) of the nested for loop prints stars(*) in odd numbers
+            printf("*");                // and it increases the odd number star(*) intervals each line till the loop ends.
+                                        // We are subtracting with  (-1), because it will print one row less otherwise it will
+        printf("\n");                   // become the exact mirror of the upper pyramid of the diamond.
+
+
+        /* ---------------------------------------------------------------
+                            |                       |
+           The code prints  | but due to the        | Hence what we see is,
+           like this:       | first triangle the    | this in the code:
+                            | shape forms this:     |
+         -------------------|---------------------------------------------
+                            |                       |
+           *******          |  4*******             |   *******
+           *****            |  44*****              |    *****
+           ***              |  444***               |     ***
+           *                |  4444*                |      *
+                            |                       |
+                            |                       |
+        ------------------------------------------------------------------*/
+
+    }
+    return 0;
+}

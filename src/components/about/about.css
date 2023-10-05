@@ -1,0 +1,51 @@
+/* About Us Section Styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px 40px;
+}
+
+/* First Column Styles (robin1) */
+.robin1 {
+    
+    
+    padding: 20px 180px;
+}
+
+.robin1 h1 {
+    font-size: 32px;
+}
+
+/* Second Column Styles (robin2) */
+.robin2 {
+    
+    margin: 0 30px;
+    padding: 20px;
+}
+
+.robin2 p {
+    font-size: 16px;
+    justify-content: center;
+}
+
+/* CTA Button Styles */
+.cta-button {
+    margin-top: 30px;
+    display: inline-block; /* Ensure the button behaves as a link */
+    width: 254px; 
+    height: 80px; 
+    font-size: 17px; 
+    line-height: 90px; 
+    text-align: center; 
+    text-decoration: none; 
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+.cta-button:hover {
+    background-color: #ff9900; /* Change the background color on hover */
+}

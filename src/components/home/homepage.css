@@ -1,0 +1,225 @@
+header{
+    height: 100vh;
+    padding-top: 5rem;
+    overflow: hidden;
+    background-image: url(../../assets/cliff.jpg);
+    animation: change 1s infinite ease-in-out;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+	  width: 100%;
+}
+
+
+.homepage__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  margin-top: 105px;
+}
+
+
+
+
+
+
+
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eebcbc;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
+  /* swiper library contents--- Dont erase this */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+
+  /* Style for the button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #546069;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #1c272f;
+}
+/* Style for the button 2*/
+.lt {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #546069;
+  color: white;
+  text-decoration: none;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+  margin-top: 90px;
+}
+.lt:hover {
+  background-color: #1c272f;
+}
+
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+  font-size: 23px;
+}
+
+.animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(40) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%; /* Gradually reveal the full width */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black; /* Blinking caret effect */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Page 1*/
+
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translateY(-50%);
+  }
+  .content h1{
+    color: rgb(169, 169, 175);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+  }
+  .content h3{
+    color: rgb(37, 180, 175);
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .content h4{
+    color: rgba(99, 148, 161, 0.8);
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 100px;
+  }
+
+
+/* page 2 */
+
+  .newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+  }
+  .newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #99ff87;
+    outline: none;
+    border-radius: 30px;
+  }
+  .newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:#314d68;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px; 
+  }
+  span{
+    color: #6b5284;
+  }
+
+
+  /*3rd page */
+
+.ContenT{
+  display: flex;
+  font-size: 18px;
+  background-image: url(../../assets/cliff.jpg);
+}
+.dash1{
+  margin:40px 250px;
+}
+
+.dash2 {
+  margin: 40px;
+
+}
