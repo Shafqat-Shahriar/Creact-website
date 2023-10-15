@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Creact-website/static/css/main.d53acf88.css",
+    "main.js": "/Creact-website/static/js/main.d896f803.js",
+    "static/media/cliff.jpg": "/Creact-website/static/media/cliff.b6df2bd46ea6bb10c43a.jpg",
+    "static/media/highway.png": "/Creact-website/static/media/highway.29372a1a9e96b57f2bd9.png",
+    "static/media/srv.jpg": "/Creact-website/static/media/srv.c47c2c7ca6def03814c9.jpg",
+    "static/media/play.jpg": "/Creact-website/static/media/play.5ee5fc3562f1c7b2572b.jpg",
+    "static/media/zig-zag3.webp": "/Creact-website/static/media/zig-zag3.776155ad1407e314b865.webp",
+    "static/media/diamond.pdf": "/Creact-website/static/media/diamond.e1970c8e01bc8c5828a7.pdf",
+    "index.html": "/Creact-website/index.html",
+    "main.d53acf88.css.map": "/Creact-website/static/css/main.d53acf88.css.map",
+    "main.d896f803.js.map": "/Creact-website/static/js/main.d896f803.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d53acf88.css",
+    "static/js/main.d896f803.js"
+  ]
+}
